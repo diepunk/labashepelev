@@ -1,0 +1,25 @@
+.app {
+  display: grid;
+  grid-template-areas: 
+          "header header"
+          "menu content";
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 100px auto;
+
+  margin: 0px auto;
+  width: "100%";
+  max-width: 80vw;
+}
+
+.app > header {
+  grid-area: header;
+}
+
+.app > nav {
+  grid-area: menu;
+}
+
+.app > main {
+  grid-area: content;
+  padding-left: 30px;
+}
